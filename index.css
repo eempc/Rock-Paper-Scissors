@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    font-family: Arial;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'h h h h h h'
+        's1 s1 s1 s2 s2 s2'
+        'p1 r r r r p2'
+        'b1 b1 b2 b2 b3 b3'
+        'f f f f f f'
+    ;
+}
+
+.header {
+    grid-area: h;
+}
+
+.status1 {
+    grid-area: s1;
+}
+
+.status2 {
+    grid-area: s2;
+}
+
+.p1 {
+    grid-area: p1;
+}
+
+.result {
+    grid-area: r;
+}
+
+.p2 {
+    grid-area: p2;
+}
+
+#button1 {
+    grid-area: b1;
+}
+
+#button2 {
+    grid-area: b2;
+}
+
+#button3 {
+    grid-area: b3;
+}
+
+.footer {
+    grid-area: f;
+}
+
