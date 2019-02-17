@@ -19,6 +19,8 @@ body {
     ;
     width: 1000px;
     margin: 10px auto 10px auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 div {
@@ -27,6 +29,11 @@ div {
 
 .header {
     grid-area: h;
+    height: 100px;
+}
+
+.status1, .status2 {
+    height: 100px;
 }
 
 .status1 {
@@ -35,6 +42,10 @@ div {
 
 .status2 {
     grid-area: s2;
+}
+
+.p1, .result, .p2 {
+    height: 200px;
 }
 
 .p1 {
