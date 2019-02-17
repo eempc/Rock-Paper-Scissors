@@ -87,3 +87,15 @@ div {
     grid-area: f;
 }
 
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-areas:
+            'h h h h h h'
+            's1 s1 s1 s1 s1 s1'
+            's2 s2 s2 s2 s2 s2'
+            'r r r r r r'
+            'b1 b1 b2 b2 b3 b3'
+            'f f f f f f'
+        ;
+    }
+}
