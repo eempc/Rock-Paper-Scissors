@@ -19,6 +19,9 @@ function playRound(playerChoice) {
     const computerChoice = randomInteger(3); //Not inclusive of 3, i.e. 0-2
     console.log(computerChoice);
 
+    document.getElementById("p1").innerHTML = "Player chooses<br>" + choiceArray[playerChoice];
+    document.getElementById("p2").innerHTML = "Computer chooses<br>" + choiceArray[computerChoice];
+
     switch (playerChoice - computerChoice) {
         case -2:
             playerWin();
@@ -53,7 +56,7 @@ function computerWin() {
 
 function changeResult(text) {
     document.getElementById("result").innerHTML = text;
-    document.getElementById("status1").innerHTML = "Player 1 score: " + playerScore;
+    document.getElementById("status1").innerHTML = "Player score: " + playerScore;
     document.getElementById("status2").innerHTML = "Computer score: " + computerScore;
 }
     

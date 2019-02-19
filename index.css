@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial;
-    background-color: rgb(70, 70, 70);
+    background-color: rgb(138, 137, 137);
 }
 
 .grid-container {
@@ -25,7 +25,6 @@ body {
 }
 
 div {
-    border: 1px solid red;
     align-content: center;
 }
 
@@ -46,10 +45,13 @@ div {
 
 .p1 {
     grid-area: p1;
+    
 }
 
 .result {
     grid-area: r;
+    margin: auto;
+    font-size: 2em;
 }
 
 .p2 {
