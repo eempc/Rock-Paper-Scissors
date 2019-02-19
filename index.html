@@ -3,7 +3,6 @@
 
 <head>
     <title>The Super Mega Rock Paper Scissors</title>
-    <script src="index.js"></script>
     <link href="index.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -14,23 +13,21 @@
             <h1>The Super Mega Rock Paper Scissors</h1>
         </div>
 
-        <div class="status1">Left 1</div>
-        <div class="status2">Right 1</div>
+        <div class="status1" id="status1">Left 1</div>
+        <div class="status2" id="status2">Right 1</div>
 
-        <div class="p1">Player 1</div>
-        <div class="result">Result</div>
-        <div class="p2">Computer</div>
+        <div class="p1" id="p1">Player 1</div>
+        <div class="result" id="result">Result</div>
+        <div class="p2" id="p2">Computer</div>
 
-        <img class="buttons" id="button1" src="images/cross.png">
-        <img class="buttons" id="button2" src="images/cross.png">
-        <img class="buttons" id="button3" src="images/cross.png">
+        <img class="buttons" id="button1" src="images/cross.png" onclick="playRound(0)">
+        <img class="buttons" id="button2" src="images/cross.png" onclick="playRound(1)">
+        <img class="buttons" id="button3" src="images/cross.png" onclick="playRound(2)">
             
-
-
         <div class="footer">
             <h3>Footer</h3>
         </div>
     </div>
 </body>
-
+<script src="index.js"></script>
 </html>
